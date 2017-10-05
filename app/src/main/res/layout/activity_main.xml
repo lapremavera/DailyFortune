@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.lapremavera.dailyfortune.app.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/please_enter_your_name"
+        android:id="@+id/Textview"
+        android:textAlignment="center"
+        android:paddingTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@id/Textview"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="270dp"
+        android:layout_marginStart="270dp"
+        android:onClick="SaveUserName"
+        android:text="@string/start"
+        />
+
+    <EditText
+        android:inputType="text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditText"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/Textview"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startButton"
+        android:layout_alignEnd="@id/startButton"
+        android:layout_alignRight="@id/startButton"
+        android:layout_marginTop="250dp"
+        android:text="@string/stop_service"
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditText"
+        android:layout_alignStart="@id/EditText"
+        android:layout_alignLeft="@id/EditText"
+        android:text="@string/start_service"
+        android:layout_marginTop="250dp"
+
+
+
+        />
+
+
+
+
+
+
+</RelativeLayout>
